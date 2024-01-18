@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    overflow: 0;
+    font-family: Montserrat;
+    color: #fff;
+}
+
+body{
+    background-color: #171616;
+}
+
+a{
+    text-decoration: none;
+}
+
+.desktop{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.desktop .info{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.desktop .info .text{
+    color: #ffffff7b;
+    font-weight: 500;
+}
+
+.mobile{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+
+
+/****************** MOBILE ********************/
+
+@media screen and (max-width:768px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        color: #fff;
+    }
+
+    .app{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+    .new-chat{
+        background-color: #1E1E1E;
+        padding: 30px 0;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .chat-gpt,
+    .santa-gpt{
+        background-color: #1E1E1E;
+        padding: 30px 0;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .chat-gpt .container .content,
+    .santa-gpt .container .content
+    {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .chat-gpt .container .content .info .text,
+    .santa-gpt .container .content .info .text
+    {
+        font-size: 15px;
+        color: #ffffff7b;
+    }
+
+    .chat-title,
+    .input-field{
+        background-color: #1E1E1E;
+        padding: 30px 0;
+        font-weight: 500;
+    }
+
+    .chat-title h2{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .chat-title .container .img{
+        display: flex;
+        align-items: center;
+        width: 30px;
+    }
+
+    .chat-title .container .img img{
+        width: 100%;
+    }
+
+    .chat-title .container{
+        display: flex;
+        gap: 20px;
+        gap: 20px;
+    }
+
+    .chat-page{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+
+    .input-field{
+        padding: 21px 0;
+        position: fixed;
+        z-index: 9;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .input-field .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-field .container .input input{
+        background-color: #1E1E1E;
+        border: none;
+        outline: none;
+    }
+
+    .send{
+        margin: 0 10px 0 0;
+    }
+
+    .chat-message,
+    .your-message{
+        margin: 30px 0 0 0;
+    }
+
+    .chat-nick,
+    .your-nick{
+        display: flex;
+        gap: 10px;
+        margin: 0 0 5px 0;
+    }
+
+    .chat-nick .title,
+    .your-nick .title{
+        color: #ffffff7b;
+    }
+
+    .you,
+    .gpt{
+        margin: 20px 0;
+    }
+
+    .messages .title{
+        font-size: 14px;
+    }
+
+    .content{
+        height: 30px;
+    }
+    .content .info{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
